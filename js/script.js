@@ -43,6 +43,14 @@ createApp({
             } else {
                 this.active++
             }
-        }
+        },
+
+        prev() {
+            if(this.active == 0) {
+                this.active = this.slides.length - 1
+            } else {
+                this.active--
+            }
       }
+    }
     }).mount("#app")
