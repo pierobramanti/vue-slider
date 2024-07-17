@@ -22,4 +22,18 @@ const slides = [
         }
     ];
     
-    console.log(slides);
+ console.log(slides);
+
+// DICHIARO COSTANTE CREATEAPP //
+const { createApp } = Vue
+
+createApp({
+    data() {
+        return {
+
+        }
+    },
+    methods: {
+
+    }
+}).mount("#app")
