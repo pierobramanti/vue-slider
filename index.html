@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Posts</title>
 
-    <script src="https://kit.fontawesome.com/1e3be9b4ce.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
 
-    <h1 class="main-title">Social Posts</h1>
+    <div id="app">
 
-    <div id="container" class="posts-list">
+        <div class="container">
+            <div class="slider-wrapper" tabindex="0">
 
-        <!-- post di esempio/template, da togliere/commentare e generare da JS -->
-        <div class="post">
-            <div class="post__header">
-                <div class="post-meta">                    
-                    <div class="post-meta__icon">
-                        <img class="profile-pic" src="https://unsplash.it/300/300?image=15" alt="Phil Mangione">                    
+                <div class="item">
+                    <img src="img/01.webp" alt="Spiderman" />
+                    <div class="text">
+                        <h3>Spiderman</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit
+                            tempore aliquid deleniti aut
+                            veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum
+                            corporis.
+                        </p>
                     </div>
-                    <div class="post-meta__data">
-                        <div class="post-meta__author">Phil Mangione</div>
-                        <div class="post-meta__time">4 mesi fa</div>
-                    </div>                    
                 </div>
-            </div>
-            <div class="post__text">Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.</div>
-            <div class="post__image">
-                <img src="https://unsplash.it/600/300?image=171" alt="">
-            </div>
-            <div class="post__footer">
-                <div class="likes js-likes">
-                    <div class="likes__cta">
-                        <a class="like-button  js-like-button" href="#" data-postid="1">
-                            <i class="like-button__icon fas fa-thumbs-up" aria-hidden="true"></i>
-                            <span class="like-button__label">Mi Piace</span>
-                        </a>
+
+                <div class="thumbs">
+                    <div class="prev"></div>
+                    <div class="next"></div>
+                    <div class="thumb active">
+                        <img src="img/01.webp" alt="Svezia" />
                     </div>
-                    <div class="likes__counter">
-                        Piace a <b id="like-counter-1" class="js-likes-counter">80</b> persone
+                    <div class="thumb">
+                        <img src="img/02.webp" alt="Ratchet & Clank" />
                     </div>
-                </div> 
-            </div>            
+                    <div class="thumb">
+                        <img src="img/03.webp" alt="Fortnite" />
+                    </div>
+                    <div class="thumb">
+                        <img src="img/04.webp" alt="Stray" />
+                    </div>
+                    <div class="thumb">
+                        <img src="img/05.webp" alt="Avengers" />
+                    </div>
+                </div>
+
+            </div>
         </div>
 
     </div>
-    
-    
-    <script src="main.js"></script>
+
+    <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
