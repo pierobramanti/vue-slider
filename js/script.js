@@ -36,5 +36,13 @@ createApp({
           active: 0
         }
       },
-      methods: {}
+      methods: {
+        next() {
+            if(this.active == this.slides.length - 1) {
+                this.active = 0
+            } else {
+                this.active++
+            }
+        }
+      }
     }).mount("#app")
